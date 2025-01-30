@@ -9,6 +9,6 @@ RUN docker-php-ext-install pdo pdo_mysql
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-RUN composer self-updateWORKDIR /usr/src/myapp
+RUN composer self-update
+WORKDIR /var/www/html
 COPY . .
-RUN composer installCMD php main.php
