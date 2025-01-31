@@ -24,6 +24,8 @@ ao entrar dentro do container php, rode os comandos nessa ordem:
 
 OBS: dá acesso ao storage
 
-```php artisan migrate```
+```php artisan migrate``` 
+e
+```php artisan key:generate```
 
 após isso, basta ir até o http://localhost:8088/  .
